@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.Cart.Delivery"
+   >
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_fileName="test.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"/>
+
+        <TextView
+            android:fontFamily="@font/lobster"
+            android:layout_marginTop="20dp"
+        android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="You package is being delivery\nTo your location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/ic_back_img" />
+
+
+
+
+</FrameLayout>

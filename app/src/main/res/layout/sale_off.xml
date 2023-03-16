@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:background="@drawable/top_bg"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:padding="10dp"
+            android:layout_marginBottom="-20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:orientation="vertical"
+        android:elevation="1dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <View
+            android:background="@drawable/top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/title"
+            android:fontFamily="@font/lobster"
+            android:layout_gravity="bottom"
+            android:textStyle="normal"
+            android:text=" Sale Off Food"
+
+
+            android:textSize="30dp"
+            android:textColor="@color/red"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginStart="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="85dp"/>
+
+            <androidx.cardview.widget.CardView
+
+
+
+                app:cardElevation="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+
+
+
+                    android:orientation="vertical"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/lobster"
+                        android:id="@+id/name_ps"
+                        android:textAlignment="center"
+
+                        android:text="Please enter the % you want the discount"
+                        android:textStyle="italic"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+
+                        android:background="@color/teal_700"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <LinearLayout
+                       android:layout_gravity="center"
+                        android:layout_width="250dp"
+                        android:layout_height="400dp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        app:cardCornerRadius="30dp">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="5dp"
+                                app:cardCornerRadius="15dp">
+
+                                <TextView
+
+                                    style="@style/viewParent"
+                                    android:layout_gravity="end"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Price"
+
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="-10dp"
+                                android:layout_marginEnd="20dp"
+                                app:cardCornerRadius="15dp">
+
+
+                                <TextView
+                                    android:id="@+id/old_price"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+
+
+
+                                    android:gravity="center_vertical"
+
+                                    android:inputType="textEmailAddress"
+                                    android:lines="1"
+                                    android:padding="10dp"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="17dp" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                app:cardCornerRadius="15dp">
+
+                                <TextView
+                                    style="@style/viewParent"
+                                    android:layout_gravity="end"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Discount %"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="-10dp"
+                                android:layout_marginEnd="20dp"
+                                app:cardCornerRadius="15dp">
+
+                                <EditText
+                                    android:id="@+id/sale_off_edt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@color/white"
+                                    android:gravity="center_vertical"
+                                    android:inputType="numberDecimal"
+                                    android:lines="1"
+                                    android:padding="10dp"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="17dp" />
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                app:cardCornerRadius="15dp">
+
+                                <TextView
+                                    style="@style/viewParent"
+                                    android:layout_gravity="end"
+                                    android:layout_marginTop="10dp"
+                                    android:text="New price"
+                                    android:textColor="@color/red"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="-5dp"
+                                android:layout_marginEnd="20dp"
+                                app:cardCornerRadius="15dp">
+
+                                <TextView
+                                    android:id="@+id/new_price"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="#4D7C7F84"
+                                    android:gravity="center_vertical"
+
+                                    android:inputType="textEmailAddress"
+                                    android:lines="3"
+                                    android:padding="10dp"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="17dp" />
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/ok_sale_off_dialog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bootom_ok_style"
+                                android:text="OK"
+                                android:textStyle="bold"
+                                android:theme="@style/ButtonOK" />
+
+                            <Button
+                                android:id="@+id/cancel_sale_of_dialog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/bootom_ok_style"
+                                android:text="CANCEL"
+                                android:theme="@style/ButtonCancel" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10dp"
+                        android:gravity="center"
+                        android:weightSum="12">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3"
+                            android:background="@color/primaryTextColor" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.NoMode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3"
+                            android:background="@color/primaryTextColor" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_margin="10dp"
+ app:cardCornerRadius="15dp"
+    android:elevation="5dp"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginStart="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:text="Pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp">
+            <TextView
+                android:id="@+id/price"
+                android:text="100.000 đ"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/sale_price"
+                android:visibility="gone"
+                android:textSize="16dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:id="@+id/rate"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:stepSize="0.5"
+                android:numStars="5"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/numrate"
+                android:text="(10)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="30dp"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/incr"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:background="@drawable/cong"/>
+        <TextView
+            android:id="@+id/num"
+            android:text="1"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/desc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:background="@drawable/tru"/>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/remove"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:backgroundTint="@color/red"
+
+        android:background="@drawable/clear"/>
+</androidx.cardview.widget.CardView>

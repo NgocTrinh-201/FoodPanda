@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Person.Person">
+
+  <RelativeLayout
+      android:background="@drawable/top_bg"
+      android:layout_width="match_parent"
+      android:layout_height="250dp">
+
+
+
+  </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        app:cardElevation="6sp"
+        app:cardCornerRadius="50dp"
+
+
+
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_ps"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/hinh"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+/>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/lobster"
+                android:id="@+id/name_ps"
+                android:textAlignment="center"
+                android:text="Chin"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:fontFamily="@font/lobster"
+                android:id="@+id/email_ps"
+                android:textAlignment="center"
+
+                android:text="trinhdo112001@gmail.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+
+                android:background="@color/teal_700"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <TextView
+                android:id="@+id/acc_ps"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:drawableTint="@color/gray"
+                android:text=" Account"
+                android:drawableLeft="@drawable/personn"
+                android:drawableRight="@drawable/arrow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/add_food"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:drawableTint="@color/gray"
+                android:text=" Add Food"
+                android:drawableLeft="@drawable/fastfood"
+                android:drawableRight="@drawable/arrow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/loca_ps"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:drawableTint="@color/gray"
+                android:text=" Address"
+                android:drawableLeft="@drawable/location"
+                android:drawableRight="@drawable/arrow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/history_ps"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:drawableTint="@color/gray"
+                android:text=" History oder"
+                android:drawableLeft="@drawable/history"
+                android:drawableRight="@drawable/arrow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/info_ps"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:drawableTint="@color/gray"
+                android:text=" Infomation"
+                android:drawableLeft="@drawable/info"
+                android:drawableRight="@drawable/arrow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+           <Button
+               android:textStyle="italic"
+               android:id="@+id/logout"
+               android:text="LOGOUT"
+               android:background="@drawable/bootom_ok_style"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</FrameLayout>

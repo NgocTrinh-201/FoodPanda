@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Person.FoodManagement">
+    <androidx.cardview.widget.CardView
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/close"
+            android:backgroundTint="#D80909"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clear"/>
+        <TextView
+
+            android:id="@+id/newaddfood"
+            android:layout_gravity="center"
+
+            android:fontFamily="@font/lobster"
+            android:textSize="25dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Managenment"
+
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/add_food"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp">
+
+                <TextView
+
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Add new food"
+                    android:textColor="@color/black" />
+            </androidx.cardview.widget.CardView>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        tools:listitem="@layout/item_food"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

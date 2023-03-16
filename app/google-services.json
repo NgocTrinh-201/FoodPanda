@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "499895116715",
+    "firebase_url": "https://eatfood-3debd-default-rtdb.firebaseio.com",
+    "project_id": "eatfood-3debd",
+    "storage_bucket": "eatfood-3debd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499895116715:android:231db9db4fce592d45a8ee",
+        "android_client_info": {
+          "package_name": "com.example.eatfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499895116715-1j0algf7bc89jtk9p7uhp87fj1jl3u1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVZwvquzQcLMGAxoyNYiurJNcE84XRu8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499895116715-1j0algf7bc89jtk9p7uhp87fj1jl3u1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499895116715:android:691667670368b1b945a8ee",
+        "android_client_info": {
+          "package_name": "com.example.foodpanda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499895116715-1j0algf7bc89jtk9p7uhp87fj1jl3u1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVZwvquzQcLMGAxoyNYiurJNcE84XRu8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499895116715-1j0algf7bc89jtk9p7uhp87fj1jl3u1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499895116715:android:174e8eca2918852745a8ee",
+        "android_client_info": {
+          "package_name": "com.example.myfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499895116715-1j0algf7bc89jtk9p7uhp87fj1jl3u1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVZwvquzQcLMGAxoyNYiurJNcE84XRu8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499895116715-1j0algf7bc89jtk9p7uhp87fj1jl3u1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499895116715:android:cc8bdefae4e3b78945a8ee",
+        "android_client_info": {
+          "package_name": "com.example.myfoodpanda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499895116715-1j0algf7bc89jtk9p7uhp87fj1jl3u1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVZwvquzQcLMGAxoyNYiurJNcE84XRu8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499895116715-1j0algf7bc89jtk9p7uhp87fj1jl3u1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

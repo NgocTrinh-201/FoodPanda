@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Cart.MoMo">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:background="@drawable/top_bg"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:padding="10dp"
+            android:layout_marginBottom="-20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="-150dp"
+                android:layout_marginEnd="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+
+                android:layout_width="match_parent"
+                android:layout_height="140dp"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:orientation="vertical"
+        android:elevation="1dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <View
+            android:background="@drawable/top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/title"
+            android:fontFamily="@font/lobster"
+            android:layout_gravity="bottom"
+            android:textStyle="normal"
+            android:text="Pay by credit"
+            android:textSize="30dp"
+            android:textColor="@color/red"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginStart="75dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back"
+            android:backgroundTint="@color/black"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="85dp"/>
+
+            <androidx.cardview.widget.CardView
+
+
+
+                app:cardElevation="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                    <TextView
+                        android:fontFamily="@font/lobster"
+                        android:id="@+id/name_ps"
+                        android:textAlignment="center"
+                        android:text="Please enter the amount to pay"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+
+                        android:background="@color/teal_700"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="50dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/price_momo"
+                            android:hint="Enter Price"
+
+                            android:textStyle="bold|italic"
+
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+
+                        <Button
+
+                            android:text="Pay now"
+                            android:id="@+id/bnt_momo"
+                            android:background="@drawable/bootom_ok_style"
+                           android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <Button
+                            android:layout_marginTop="20dp"
+
+                            android:text="Cancel"
+                            android:id="@+id/cancel_momo"
+                            android:background="@drawable/bootom_cancel_styte"
+                            android:theme="@style/ButtonCancel"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="240dp"
+                        android:gravity="center"
+                        android:weightSum="12">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3"
+                            android:background="@color/primaryTextColor" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.NoMode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3"
+                            android:background="@color/primaryTextColor" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+

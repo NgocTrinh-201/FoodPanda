@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/top_bg"
+    android:layout_height="match_parent"
+    tools:context=".Login.ForgotPass">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/back" />
+
+
+        <ImageView
+            android:id="@+id/iconTv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/backBtn"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/person" />
+
+        <TextView
+            android:fontFamily="@font/lobster"
+            android:id="@+id/label1Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconTv"
+            android:layout_marginTop="10dp"
+            android:text="You forgot your password ?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/label2Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter Email"
+            android:layout_below="@id/label1Tv"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginTop="245dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:outlineSpotShadowColor="#03A9F4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+
+
+                    android:id="@+id/email"
+                    android:padding="10dp"
+                    android:lines="1"
+                    android:textColorHint="@color/red"
+                    android:hint="Email"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bootom_ok_style"
+            android:text="Agree" />
+
+
+
+</RelativeLayout>
+
+</RelativeLayout>
